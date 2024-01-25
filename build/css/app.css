@@ -454,11 +454,25 @@ h4 {
 }
 .contenedor_navegacion .acceso a {
   display: block;
+  border: 1px solid transparent;
+  padding: 0.5rem 1.5rem;
+  border-radius: 1rem;
+}
+.contenedor_navegacion .acceso a:hover {
+  background-color: hsl(0, 0%, 8%);
+  border: thin solid transparent;
+  color: hsl(0, 0%, 98%);
 }
 .contenedor_navegacion .acceso a:last-child {
   border: 1px solid hsl(0, 0%, 8%);
   padding: 0.5rem 1.5rem;
   border-radius: 1rem;
+  transition: background-color 0.2s ease;
+}
+.contenedor_navegacion .acceso a:last-child:hover {
+  background-color: hsl(0, 0%, 8%);
+  border: thin solid transparent;
+  color: hsl(0, 0%, 98%);
 }
 
 .navegacion {
@@ -488,6 +502,9 @@ li .sub_navegacion img {
   width: 1rem;
 }
 li .up {
+  display: none;
+}
+li .up2 {
   display: none;
 }
 
@@ -619,11 +636,18 @@ li .up {
   color: hsl(0, 0%, 98%);
   background-color: hsl(0, 0%, 8%);
   margin: 0 auto;
+  transition: background-color 0.2s ease;
+  border: thin solid transparent;
 }
 @media (min-width: 768px) {
   .info .btn {
     margin: 0;
   }
+}
+.info .btn:hover {
+  background-color: hsl(0, 0%, 98%);
+  border: thin solid hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 8%);
 }
 
 .image {

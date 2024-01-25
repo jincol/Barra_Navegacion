@@ -81,10 +81,19 @@
     color: $AlmostWhite;
     background-color: $AlmostBlack;
     margin: 0 auto;
+    transition: background-color .2s ease;
+    border: thin solid transparent;
 
     @include tablet {
       margin: 0;
     }
+
+    
+  &:hover{
+    background-color: $AlmostWhite;
+    border: thin solid $AlmostBlack;
+    color: $AlmostBlack;
+  }
   }
 }
 

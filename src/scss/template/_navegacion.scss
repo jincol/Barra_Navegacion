@@ -97,11 +97,27 @@
 
     a {
       display: block;
+      border: 1px solid transparent;
+        padding: 0.5rem 1.5rem;
+        border-radius: 1rem;
+
+      &:hover{
+        background-color:$AlmostBlack ;
+        border: thin solid transparent;
+        color: $AlmostWhite;
+      }
 
       &:last-child {
         border: 1px solid $AlmostBlack;
         padding: 0.5rem 1.5rem;
         border-radius: 1rem;
+        transition: background-color .2s ease;
+
+        &:hover{
+          background-color:$AlmostBlack ;
+          border: thin solid transparent;
+          color: $AlmostWhite;
+        }
       }
     }
   }
@@ -137,6 +153,10 @@ li {
   }
 
   .up {
+    display: none;
+  }
+
+  .up2{
     display: none;
   }
 }
@@ -194,3 +214,4 @@ li {
 .trans {
   transform: translateX(0rem);
 }
+
